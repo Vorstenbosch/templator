@@ -4,7 +4,6 @@ import (
 	"io/ioutil"
 	"os"
 	"os/exec"
-	"log"
 	"templator/yamldata"
 )
 
@@ -50,8 +49,6 @@ func CaptureInputFromEditor(d map[string]string) ([]byte, error) {
 
 	// Putting the prepared YAML in the file
 	b, err := yamldata.PrepareYamlFromData(d)
-
-	log.Printf("Data received: %v", d)
 
 	if err != nil {
 		return []byte{}, err

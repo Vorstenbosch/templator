@@ -2,9 +2,9 @@
 
 ## Impact
 Customer were unable to use the following services due to the outage:
-{{ range .servicesAffected }}
+{{- range .servicesAffected }}
     - {{ . }}
-{{ end }}
+{{- end }}
 
 The outage started at {{ .startDateTime }} and ended at {{ .endDateTime }}.
 
