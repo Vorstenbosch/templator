@@ -1,4 +1,4 @@
-# template-it
+# Templator
 
 ## TL;DR
 1. Point to a template
