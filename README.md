@@ -7,3 +7,4 @@
 
 ## TODO'S
 1. Make sure it can be get from github (correct package name etc)
+2. Improve readme
