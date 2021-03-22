@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
-	"log"
 	"os"
 	"gopkg.in/yaml.v2"
 
@@ -21,7 +20,7 @@ func main() {
 
 	content, err := ioutil.ReadFile(templatePath)
 	if err != nil {
-		log.Fatal(err)
+		panic(err)
 	}
 
 	t := template.GetTemplate(string(content))
