@@ -9,7 +9,7 @@ CLI application that reverse engineers go templates to make it easy to use templ
 ## Usage
 ```bash
 go get github.com/vorstenbosch/templator
-${GOPATH/bin/templator -h}
+${GOPATH}/bin/templator -h
 ```
 
 ## Supported template types
