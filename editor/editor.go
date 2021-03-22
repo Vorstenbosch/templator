@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"os"
 	"os/exec"
-	"templator/yamldata"
+	"github.com/vorstenbosch/templator/yamldata"
 )
 
 //

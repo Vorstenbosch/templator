@@ -9,8 +9,8 @@ import (
 	"os"
 	"gopkg.in/yaml.v2"
 
-	"templator/editor"
-	"templator/template"
+	"github.com/vorstenbosch/templator/editor"
+	"github.com/vorstenbosch/templator/template"
 )
 
 func main() {
