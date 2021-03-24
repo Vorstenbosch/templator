@@ -5,21 +5,22 @@ import (
 	"os"
 	"os/exec"
 	"github.com/vorstenbosch/templator/yamldata"
+	"runtime"
 )
 
 //
-// Credits go to https://samrapdev.com/capturing-sensitive-input-with-editor-in-golang-from-the-cli/
-// I just added the prepared yaml to the temporary file
+// Heavily inspired from https://samrapdev.com/capturing-sensitive-input-with-editor-in-golang-from-the-cli/
 //
-
-// DefaultEditor is vim because we're adults ;)
-const DefaultEditor = "vim"
 
 // openFileInEditor opens filename in a text editor.
 func openFileInEditor(filename string) error {
 	editor := os.Getenv("EDITOR")
 	if editor == "" {
-		editor = DefaultEditor
+		if runtime.GOOS == "windows" {
+			editor = "notepad.exe"
+		} else {
+			editor = "vim"
+		}
 	}
 
 	// Get the full executable path for the editor.
