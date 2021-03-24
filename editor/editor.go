@@ -4,8 +4,9 @@ import (
 	"io/ioutil"
 	"os"
 	"os/exec"
-	"github.com/vorstenbosch/templator/yamldata"
 	"runtime"
+
+	"github.com/vorstenbosch/templator/yamldata"
 )
 
 //
